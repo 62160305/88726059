@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Hotel Booking</title>
+</head>
+<body>
+ <h3>Hotel Booking</h3>
+ <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/632/88726059/lab02/afile.php">
+    <table>
+        <tr><td><label for="room Type">Room Type</label></td>
+            <td><select name="roomtype" style="width: 345px">
+                <option value="Please Select">Please Select</option>
+                <option value="Standard">Standard</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Deluxe">Duluxe</option>
+            </select>
+            </td>
+        </tr>
+        <tr><td><label for="num of guest">Number of guest</label></td>
+            <td><select name="numguest" style="width: 345px">
+                <option value="Please Select">Please Select</option>
+                <option value="1-2">1-2</option>
+                <option value="3-4">3-4</option>
+                <option value="5-6">5-6</option>
+                <option value="7-8">7-8</option>
+            </select></td>
+        </tr>
+        <tr><td><label for="name">Name</label></td>
+            <td><input type="text" name="fname" >&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Iname">
+            </td>
+        </tr>
+        <tr><td><label for="email">Email</label></td>
+            <td><input type="text" name="email" style="width: 337px">
+            </td>
+        </tr>
+        <tr><td><label for="arrivaidate">Arrival</label></td>
+            <td><input type="date" id="start" name="arrivaldate">&nbsp;&nbsp;&nbsp;<input type="time" id="appt" name="arrivaltime"></td>
+        </tr>
+        <tr><td><label for="Departure">Departure</label></td>
+            <td><input type="date" id="start" name="departuredate">&nbsp;&nbsp;&nbsp;<input type="time" id="appt" name="departuretime"></td>
+        </tr>
+        <tr><td><label for="Free pickup">Free pickup</label></td>
+            <td><input type="radio" name="pickup"  value="Yes">Yes, Sure!</td>
+        </tr>
+        <tr>
+            <td></td><td><input type="radio" name="pickup"  value="No">No, I already rented a car</td>
+        </tr>
+        <tr><td><label for="Flight Number">Flight Number</label></td>
+            <td><input type="text" name="flightnum" style="width: 337px">
+            </td>
+        </tr>
+        <tr><td><label for="Other requests">Other requests</label></td>
+            <td><input type="text" name="Otherreq" style="width: 337px">
+            </td>
+        </tr>
+        <td colspan="2">
+            <center>
+                <input type="submit" value="Complete Reservation">
+                </td>
+            </center>
+
+
+
+        
+
+        
+
+
+
+    </table>
+
+
+ </form>
+</body>
+</html>
