@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>4.โปรแกรม บวกสะสม - sum.html</h2>
+    <input type="text" placeholder="ใส่ตัวเลขที่ต้องการ" id="num1"> -  
+            <input type="text" placeholder="ใส่ตัวเลขที่ต้องการ" id="num2">
+            <button onclick="sum1()">Summary</button>
+            <p id="sum"></p><p id="total"></p>
+<script>
+    function sum1(){
+        sum.innerHTML="";
+        num1 = document.getElementById('num1');
+        num2 = document.getElementById('num2');
+        sum = document.getElementById('sum');
+        total = document.getElementById('total');
+        var total = 0;
+          
+    for (  i = parseInt(num1.value);i<=parseInt(num2.value);i++) {
+        total = total+i;
+        sum.innerHTML +=i
+        if(i<parseInt(num2.value)){
+            
+            sum.innerHTML += " + "
+        }
+        if(i==parseInt(num2.value)){
+            sum.innerHTML += " = " + total
+        }
+     
+        
+        
+        
+    }
+    
+}
+</script>
+</head>
+<body>
+            
+            
+</body>
+</html>

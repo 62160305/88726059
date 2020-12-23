@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <h2>2.โปรแกรม สูตรคูณ - multi.html</h2>
+        <input type="text"  onkeyup="value1(this.value);">
+        <table border="1" >
+            <tr id="show"></tr>
+    <script>
+        function value1(n) {
+            A = document.getElementById('show')
+            A.innerHTML = ''
+            total = ``
+
+            for (i = 1; i <= 12; i++) {
+                total += `<td>${n} x ${i} = </td><td>${n*i}</td>
+                <br>`
+        }
+        A.innerHTML = total
+    }
+    
+    </script>
+    </head>
+    <body >
+        
+        <body >
+    
+        </tbody>
+        </table>
+    </body>
+    
+</html>

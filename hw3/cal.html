@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>3.โปรแกรม เครื่องคิดเลข- cal.html</h2>
+    <input type="text" id="value1" placeholder="num1">
+    <select name="symbol" id="hoo">
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">*</option>
+        <option value="4">/</option>
+    </select>
+    <input type="text" id="value2" placeholder="num2">
+    <button onclick="as()">=</button>
+    <p id="show"></p>
+
+</head>
+<body>
+    <script >
+        function as(){
+            number1 = document.getElementById('value1');
+            number2 = document.getElementById('value2');
+            
+            hoo =document.getElementById('hoo');
+            if(parseInt(hoo.value) == 1){
+                var sum = document.getElementById('show');
+                sum.innerHTML=parseInt(number1.value) + parseInt(number2.value)
+            }
+            if(parseInt(hoo.value) == 2){
+                var sum = document.getElementById('show');
+                sum.innerHTML=parseInt(number1.value) - parseInt(number2.value)
+            }
+            if(parseInt(hoo.value) == 3){
+                var sum = document.getElementById('show');
+                sum.innerHTML=parseInt(number1.value) * parseInt(number2.value)
+            }
+            if(parseInt(hoo.value) == 4){
+                var sum = document.getElementById('show');
+                sum.innerHTML=parseInt(number1.value) / parseInt(number2.value)
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>
