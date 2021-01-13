@@ -1,0 +1,21 @@
+function doSearch(){
+    txt= document.getElementById('txt').value;
+    disp= document.getElementById("disp");
+    disp.inreHTML="";
+    html="";
+    cnt=0;
+    for(i=0;i < songs.length;i++){
+        if(songs[i][0]..indexOf(txt) >= 0){
+            cnt++;
+            html += '
+            <div class="card">
+                <div class="card-body">
+                    <h4 class ="card-title">เพลง ${songs[i][0]}</h4>
+                    <h4 class ="card-title">ศิลปิน ${songs[i][1]}</h4>
+                    <p class="card-text">${nl2br(songs[i][2])}</p>
+                </div>
+            </div>';
+        }
+
+    }
+}
